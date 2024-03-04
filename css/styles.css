@@ -265,13 +265,15 @@ cite {
 }
 .col-2,
 .col-3,
-.col-4 {
+.col-4,
+.col-3rd {
   width: 100%;
   margin: 0 auto;
 }
 .col-2,
 .col-3,
-.col-4 {
+.col-4,
+.col-3rd {
   width: 100%;
   padding: 0 0 15px 0;
 }
@@ -358,6 +360,11 @@ footer .section-content {
   }
   .col-4 {
     width: 25%;
+    float: left;
+    margin: 0;
+  }
+  .col-3rd {
+    width: 33.33%;
     float: left;
     margin: 0;
   }
@@ -533,6 +540,7 @@ ul.hide {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
     -webkit-transition: 0.25s; /* Safari */
   transition: 0.25s;
+  width: 300px;
 }
 @media screen and (min-width: 900px) {
   .quad {
@@ -731,4 +739,7 @@ a.anchor {
 }
 #tabs a.anchor {
   top: -200px;
+}
+.text-left {
+  text-align:left;
 }
