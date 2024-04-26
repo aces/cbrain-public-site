@@ -22,8 +22,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 <meta charset="utf-8">
-<title>cbrain</title>
+<title>CBRAIN</title>
 <meta name="viewport" content="width=device-width">
 <meta name="description" content="This is the website of cbrain.">
 <meta name="keywords" content="big data, compute, pipelines, research">
@@ -36,15 +38,15 @@
   <!-- navigation -->
   <nav class="site-nav ">
     <div class="nav-container ">
-      <div class="branding active"><a href="index.html"><strong>cbrain</strong></a></div>
+      <div class="branding active"><a href="index.html"><img src="images/logo-cbrain.png" class="logo" alt="CBRAIN"></a></div>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-        <li class="nav-item"><a href="features.html">features</a></li>
-        <li class="nav-item"><a href="getstarted.html">getting started</a></li>
-        <li class="nav-item"><a href="faq.html">faq</a></li>
-        <li class="nav-item"><a href="about.html">about</a></li>
-        <li class="nav-item"><a href="contact.html">contact us</a></li>
-        <li class="nav-item"><a href="https://portal.cbrain.mcgill.ca/login">login</a></li>
+        <li class="nav-item"><a href="features.html">Features</a></li>
+        <li class="nav-item"><a href="getstarted.html">Getting Started</a></li>
+        <li class="nav-item"><a href="https://github.com/aces/cbrain/wiki">FAQ</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a href="https://portal.cbrain.mcgill.ca/login">Login</a></li>
       </ul>
     </div>
   </nav>
@@ -52,45 +54,103 @@
   <section class="lt-blue-bg hero-pad">
     <div class="section-content">
       <div class="hero-box">
-        <img src="images/icon-cbrain.png">
-        <p>CBRAIN is an infrastructure that connects researchers and data from all walks of science to high performance and cloud computing in an easy to manage, reproducible, and user-friendly manner.</p>
-        <a href="getstarted.html"><button>get started</button></a>
+        <img src="images/logo-cbrain.png">
+        <p class="hero-box-p text-left ">CBRAIN is a web-enabled distributed computing platform that facilitates collaborative research on large, distributed data by creating an easy-to-use interface for users (or groups of collaborating users) to access high-performance computing (HPC) and Cloud Computing resources. Through a series of web-based services, CBRAIN manages data access, transfer, caching and provenance, as well as data processing and reporting. While predominantly used to support researchers in neuroinformatics, CBRAIN is generic and modular, and can easily be extended with new data models and tools for a broad range of research disciplines.</p>
       </div>
     </div>
   </section>
 
-  <!-- main content -->
-  <section class="footer-end">
+  <!-- features -->
+  <section class="">
     <div class="section-content value-box">
+      <h1>FEATURES</h1>
       <div class="icons">
         <div class="icon">
-          <img src="images/icon-computer.png">
-          <p>Accessibility<br>
-            Ability to work across multiple machines and filesystems.
+          <a href="features.html#cloud">
+            <img src="images/icons/cloud-computing.png" class="color-change">
+          </a>
+          <p>Easy Access to HPC and Cloud Computing Resources
           </p>
         </div>
         <div class="icon">
-          <img src="images/icon-tap.png">
-          <p>Efficiency<br>
-            Quickly moving compute and data behind the scenes.
+          <a href="features.html#pipelines">
+            <img src="images/icons/pipelines.png" class="color-change">
+          </a>
+          <p>Makes Complex Pipelines Easily Accessible
           </p>
         </div>
         <div class="icon">
-          <img src="images/icon-clipboard.png">
-          <p>Reproducibility<br>
-            Strict standards and pipelines allow for reproducible results.
+          <a href="features.html#datasets">
+            <img src="images/icons/datasets.png" class="color-change">
+          </a>
+          <p>Analyze And View Large Datasets Online 
+          </p>
+        </div>
+        <div class="icon">
+          <a href="features.html#transfer">
+            <img src="images/icons/data-transfer.png" class="color-change">
+          </a>
+          <p>Simplified Data Management and Transfers
+          </p>
+        </div>
+        <div class="icon">
+          <a href="features.html#workflows">
+            <img src="images/icons/workflows.png" class="color-change">
+          </a>
+          <p>Automated Workflows and Provenance Tracking 
+          </p>
+        </div>
+        <div class="icon">
+          <a href="features.html#teamwork">
+            <img src="images/icons/teamwork.png" class="color-change">
+          </a>
+          <p>Simplified Collaboration and Teamwork
           </p>
         </div>
       </div>
-      <a href="features.html"><button>features</button></a>
+      
     </div>
   </section>
   
+<!-- get started -->
+
+  <section class="lt-blue-bg footer-end">
+    <div class="section-content value-box">
+      <h1>GETTING STARTED</h1>
+      <div class="icons">
+        <div class="icon">
+          <a href="getstarted.html#users">
+            <img src="images/icons/users.png" class="color-change">
+          </a>
+          <p>For Users
+          </p>
+        </div>
+        <div class="icon">
+          <a href="getstarted.html#developers">
+            <img src="images/icons/developers.png" class="color-change">
+          </a>
+          <p>For Developers
+          </p>
+        </div>
+        <div class="icon">
+          <a href="getstarted.html#support">
+            <img src="images/icons/support.png" class="color-change">
+          </a>
+          <p>Request Support
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- footer -->
   <footer>  
     <div class="section-content flex">
       <a href="https://mcgill.ca/">
         <img src="images/logo-mcgill.png">
+      </a>
+      <a href="https://mcgill.ca/hbhl">
+        <img src="images/logo-hbhl.jpg">
       </a>
       <a href="https://ludmercentre.ca/">
         <img src="images/logo-ludmer.png">

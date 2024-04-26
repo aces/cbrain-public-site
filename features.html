@@ -22,8 +22,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 <meta charset="utf-8">
-<title>cbrain</title>
+<title>CBRAIN</title>
 <meta name="viewport" content="width=device-width">
 <meta name="description" content="This is the website of cbrain.">
 <meta name="keywords" content="big data, compute, pipelines, research">
@@ -36,78 +38,167 @@
   <!-- navigation -->
   <nav class="site-nav ">
     <div class="nav-container ">
-      <div class="branding"><a href="index.html"><strong>cbrain</strong></a></div>
+      <div class="branding"><a href="index.html"><img src="images/logo-cbrain.png" class="logo" alt="CBRAIN"></a></div>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-        <li class="nav-item active"><a href="features.html">features</a></li>
-        <li class="nav-item"><a href="getstarted.html">getting started</a></li>
-        <li class="nav-item"><a href="faq.html">faq</a></li>
-        <li class="nav-item"><a href="about.html">about</a></li>
-        <li class="nav-item"><a href="contact.html">contact us</a></li>
-        <li class="nav-item"><a href="https://portal.cbrain.mcgill.ca/login">login</a></li>
+        <li class="nav-item active"><a href="features.html">Features</a></li>
+        <li class="nav-item"><a href="getstarted.html">Getting Started</a></li>
+        <li class="nav-item"><a href="https://github.com/aces/cbrain/wiki">FAQ</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a href="https://portal.cbrain.mcgill.ca/login">Login</a></li>
       </ul>
     </div>
   </nav>
-  <!-- banded sections -->
-  <section class="lt-blue-bg hero-pad">
-    <div class="section-content">
-      <div class="col-4">
-        <img src="images/icon-execute.png">
+
+    <!-- features -->
+  <section class="hero-pad">
+    <div class="section-content value-box">
+      <h1>FEATURES</h1>
+      <div class="icons">
+        <div class="icon">
+          <a href="features.html#cloud">
+            <img src="images/icons/cloud-computing.png" class="color-change">
+          </a>
+          <p>Easy Access to HPC and Cloud Computing Resources
+          </p>
+        </div>
+        <div class="icon">
+          <a href="features.html#pipelines">
+            <img src="images/icons/pipelines.png" class="color-change">
+          </a>
+          <p>Makes Complex Pipelines Easily Accessible
+          </p>
+        </div>
+        <div class="icon">
+          <a href="features.html#datasets">
+            <img src="images/icons/datasets.png" class="color-change">
+          </a>
+          <p>Analyze And View Large Datasets Online 
+          </p>
+        </div>
+        <div class="icon">
+          <a href="features.html#transfer">
+            <img src="images/icons/data-transfer.png" class="color-change">
+          </a>
+          <p>Simplified Data Management and Transfers
+          </p>
+        </div>
+        <div class="icon">
+          <a href="features.html#workflows">
+            <img src="images/icons/workflows.png" class="color-change">
+          </a>
+          <p>Automated Workflows and Provenance Tracking 
+          </p>
+        </div>
+        <div class="icon">
+          <a href="features.html#teamwork">
+            <img src="images/icons/teamwork.png" class="color-change">
+          </a>
+          <p>Simplified Collaboration and Teamwork
+          </p>
+        </div>
       </div>
-      <div class="col-3 feature-box">
-        <h2>Execute Pipelines on High Performance Computing</h2>
-        <p>CBRAIN has a multitude of computational pipelines that allow you to perform complex "big data" analytics. The pipelines range from simple conversion operations to neuroimaging to genomics to supply chain simulation modeling.</p>
-        <p>Users can decide what data to use, what options are needed, and then launch pipelines on large-scale computing rapid processing.</p>
-        <a href="https://portal.cbrain.mcgill.ca/available"><button>List of Tools and Datasets</button></a>
+      
+    </div>
+  </section>
+
+  <!-- banded sections -->
+  <section class="lt-blue-bg">
+    <a name="cloud" class="anchor-margin"></a>
+    <div class="section-content">
+      <div class="col-3rd">
+        <img src="images/features/cloud.png">
+      </div>
+      <div class="col-2-3rd feature-box">
+        <h2>Easy Access to HPC and Cloud Computing Resources</h2>
+        <p>CBRAIN offers an easy-to-use web interface for researchers to access HPC and Cloud Computing resources, providing them with simplified but powerful access to advanced computational resources for scientific research.</p> 
+        <p>Resources are provided through partnership with an internationally distributed network of service providers, including the Digital Research Alliance of Canada, the Minnesota Supercomputing Institute, the Jülich Supercomputing Centre, the San Diego Supercomputing Center, the Pittsburgh Supercomputing Center and others, offering streamlined access to computing and data capacity for the research community.
+</p>
+        <a href="https://alliancecan.ca/en"><button>The Digital Research Alliance of Canada</button></a>
       </div>
     </div>
   </section>
 
   <section class="">
+    <a name="pipelines" class="anchor-margin"></a>
     <div class="section-content">
-      <div class="col-3 feature-box">
-        <h2>Create Your Own Pipelines</h2>
-        <p>CBRAIN works with an ecosystem of software making it easy for users to define, test and import their own pipelines into the system. We utilize the easy to use <a href="http://boutiques.github.io/">Boutiques JSON Standard</a> to define execution pipelines for automatic import to CBRAIN.</p>
-        <!-- <p>Check out our <a href="https://github.com/aces/cbrain/wiki/Tool-integration-with-Boutiques-or-Scientific-tool-integration-in-CBRAIN">documentation</a> and begin to import your own pipelines.</p> -->
-        <a href="https://github.com/aces/cbrain/wiki/Tool-integration-with-Boutiques-or-Scientific-tool-integration-in-CBRAIN"><button>Tool Integration Documentation</button></a>
+      <div class="col-3rd">
+        <img src="images/features/pipelines.png">
       </div>
-      <div class="col-4">
-        <img src="images/icon-create.png">
+      <div class="col-2-3rd feature-box">
+        <h2>Makes Complex Pipelines Easily Accessible</h2>
+
+        <p>CBRAIN offers a structured environment for software integration that simplifies the sharing of complex analytical pipelines that facilitate collaboration and research reproducibility.  CBRAIN tool integrations use the <a href="http://boutiques.github.io/">Boutiques Descriptive Framework</a> to facilitate the automatic creation of a standardized GUI that provides access to different pipeline options.  This simplifies the experience of new users who are using the research tools, allowing them to focus on the science.</p>
+        <a href="https://github.com/aces/cbrain/wiki/Tool-integration-with-Boutiques-or-Scientific-tool-integration-in-CBRAIN"><button>Read More About Tool Integration</button></a>
       </div>
     </div>
   </section>
 
-  <section class="lt-blue-bg hero-pad">
+  <section class="lt-blue-bg">
+    <a name="datasets" class="anchor-margin"></a>
     <div class="section-content">
-      <div class="col-4">
-        <img src="images/icon-move.png">
+      <div class="col-3rd">
+        <img src="images/features/datasets.png">
       </div>
-      <div class="col-3 feature-box">
-        <h2>Seamlessly Move Data</h2>
-        <p>CBRAIN offers a number of Data Providers for storing, organizing, and moving your data seamlessly throughout the CBRAIN ecosystem ensuring large datasets are moved efficiently and securely to perform large-scale computations.</p>
-        <p>Whether your data starts on your desktop, resides at a computing center or lives out in the cloud, it can easily become part of the CBRAIN data ecosystem.</p>
+      <div class="col-2-3rd feature-box">
+        <h2>Analyze and View Large Datasets Online</h2>
+        <p>CBRAIN provides a simple to use web interface for users to manage and work with large datasets.  CBRAIN improves productivity by facilitating online viewing of both pre-processed and post-processed data, enabling research teams to perform remote quality assurance in the browser, without reliance on locally installed software.  <a href="https://brainbrowser.cbrain.mcgill.ca/">BrainBrowser</a> supports visualization features in CBRAIN, directly in the browser. Within CBRAIN, users are able to access large data repositories such as the UK Biobank, the Canadian Open Neuroscience Platform (CONP) and OpenNeuro.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+    <a name="transfer" class="anchor-margin"></a>
+    <div class="section-content">
+      <div class="col-3rd">
+        <img src="images/features/transfer.png">
+      </div>
+      <div class="col-2-3rd feature-box">
+        <h2>Simplified Data Management and Transfers</h2>
+        <p>CBRAIN supports a diverse range of standards-based data storage types for HPC and Cloud-based systems, allowing researchers to securely store, organize and transfer data seamlessly across the globally connected set of resources for large-scale data analysis.</p>
         <a href="https://portal.cbrain.mcgill.ca/doc/manual/uploading.html"><button>Transfering Datasets</button></a>
       </div>
     </div>
   </section>
 
-  <section class="">
+  <section class="lt-blue-bg">
+    <a name="workflows" class="anchor-margin"></a>
     <div class="section-content">
-      <div class="col-3 feature-box">
-        <h2>Connect to Vast Computing Resources</h2>
-        <p>CBRAIN provides a place where users can connect computing and cloud resources together to give users a vast pool of computation to acheive their science. CBRAIN has a partnership with The Digital Research Alliance of Canada to provide millions of computing hours for the research com-munity through our Portal.</p>
-        <a href="https://alliancecan.ca/en"><button>The Digital Research Alliance of Canada</button></a>
+      <div class="col-3rd">
+        <img src="images/features/workflows.png">
       </div>
-      <div class="col-4">
-        <img src="images/icon-create.png">
+      <div class="col-2-3rd feature-box">
+        <h2>Automated Workflows and Provenance Tracking</h2>
+        <p>CBRAIN has a multitude of computational pipelines that allow researchers to perform complex big data analytics.  The suite of available pipelines cover the full spectrum of neuroinformatics needs covering structural MRI, functional MRI preprocessing and analysis, tractography, PET, EEG, arterial spin labeling, as well as genetics including single-cell transcriptomics.</p>
+        <p>
+        Through the CBRAIN web interface, users select the data to analyze, the processing pipeline to analyze it with and the parameters to be applied, launching the processing tasks across the connected set of resources with a “single click", increasing computational speeds and reducing the time to achieve results. CBRAIN automatically maintains detailed log files, making provenance tracking and quality control easier, and ensuring reproducibility. CBRAIN is a completely general platform that could be used in other research area settings.
+        </p>
       </div>
     </div>
   </section>
+
+  <section class="footer-end">
+    <a name="teamwork" class="anchor-margin"></a>
+    <div class="section-content">
+      <div class="col-3rd">
+        <img src="images/features/training.png">
+      </div>
+      <div class="col-2-3rd feature-box">
+        <h2>Simplified Collaboration and Teamwork</h2>
+        <p>CBRAIN allows researchers to easily collaborate and build team projects, with fully customizable controls to secure access to projects, data and tools. By removing the burden of local software installation, CBRAIN improves user experience through a customizable GUI and reduces the risks to reproducibility associated with human error.  Team members can remotely verify all stages of data processing and the results, making collaboration and training more efficient.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- footer -->
   <footer>  
     <div class="section-content flex">
       <a href="https://mcgill.ca/">
         <img src="images/logo-mcgill.png">
+      </a>
+      <a href="https://mcgill.ca/hbhl">
+        <img src="images/logo-hbhl.jpg">
       </a>
       <a href="https://ludmercentre.ca/">
         <img src="images/logo-ludmer.png">
